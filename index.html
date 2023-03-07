@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <!-- Glidejs -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css"
+    />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio Website</title>
+  </head>
+  <body onload="myfunc()">
+    <div id="preloader">
+			<div id="containeroo" class="container-preloaderoo">
+				<div class="animation-preloaderoo">
+					<div class="spinneroo"></div>
+					<div class="txt-loadingoo">
+						<span preloader-text="H" class="characters">H</span>
+						
+						<span preloader-text="I" class="characters">I</span>
+						
+						<span preloader-text="M" class="characters">M</span>
+						
+						<span preloader-text="A" class="characters">A</span>
+						
+						<span preloader-text="N" class="characters">N</span>
+					
+						<span preloader-text="S" class="characters">S</span>
+						
+						<span preloader-text="H" class="characters">H</span>
+
+            <span preloader-text="U" class="characters">U</span>
+            <span preloader-text="." class="characters">.</span>
+            <span preloader-text="." class="characters">.</span>
+
+					</div>
+				</div>	
+				<div class="loader-section section-left"></div>
+				<div class="loader-section section-right"></div>
+			</div>
+		</div>	
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+    <!-- Header -->
+    <header id="home" class="header">
+      <!-- Navigation -->
+      <nav class="nav">
+        <div class="navigation container">
+          <div class="logo">
+            <h1>himanshu <span>.</span></h1>
+          </div>
+
+          <div class="menu">
+            <div class="top-nav">
+              <div class="logo">
+                <h1>Himanshu<span>.</span></h1>
+              </div>
+
+              <div class="close">
+                <i class="fas fa-times"></i>
+              </div>
+            </div>
+
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#home" class="nav-link scroll-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link scroll-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#services" class="nav-link scroll-link">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="#skills" class="nav-link scroll-link">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a href="#teams" class="nav-link scroll-link">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link scroll-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hamburger">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero -->
+      <div id="particles.js">
+      <div class="hero">
+        <h3>Hello, my name is</h3>
+        <h1>Himanshu Dorbi</h1>
+        <h4>And I'm a <span id="type1"></span></h4>
+        <a href="payment.html " target="_blank">Hire me</a>
+      </div>
+
+      <!-- <img  src="#" alt="" /> -->
+
+      <!-- icons -->
+      <div class="icons">
+        <span><i class="fab fa-linkedin"></i></span>
+        <span><i class="fab fa-instagram"></i></span>
+        <!-- <span><i class="fab fa-twitter"></i></span> -->
+        <span><i class="fab fa-github"></i></span>
+      </div>
+
+      <!-- color Control -->
+      <div class="control">
+        <div class="widget">
+          <i class="fas fa-cog"></i>
+        </div>
+
+        <div class="colors">
+          <span data-id="#0044ff"></span>
+          <span data-id="#ff4600"></span>
+          <span data-id="#ce00ff"></span>
+          <span data-id="#03ffc7"></span>
+        </div>
+      </div>
+      </div>
+      <a id="scroll-btn" href="#about"></a>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </header>
+
+    <!-- Main -->
+    <section class="section about" id="about">
+      <div class="title">
+        <h1>About me</h1>
+      </div>
+
+      <div class="about-center container">
+        <div class="left" data-aos="fade-down-right" data-aos-duration="2000">
+          <img src="my.jpg" alt="" />
+        </div>
+
+        <div class="right" data-aos="fade-up-left" data-aos-duration="2000">
+          <h1>I'm Himanshu a <span id="type2"></span></h1>
+
+          <p>
+            As a 2nd year engineering student, i possess a diverse set of technical skills that make me well-suited for software development, including:
+       
+              <li> Expertise in front-end web development with HTML, CSS, and JavaScript.</li>
+            <li>Proficiency with popular front-end frameworks such as Chakra UI and React.js.</li>
+            <li>Familiarity with version control tools like Git and Github.</li>
+            <li>Knowledge of back-end development tools such as Firebase and REST API.</li>
+           <li> Proficiency in Bootstrap for creating responsive and mobile-first web pages.</li>
+          </p>
+
+          <a href="resumeeee.pdf" download="resume.pdf" class="btn">Download CV<i class="fa fa-download"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section theme" id="services">
+      <div class="title">
+        <h1>Timeline</h1>
+      </div>
+
+      <div class="services-center container">
+        <div class="service" data-aos="fade-right" data-aos-duration="2000">
+           <!--- <div class="timeline">
+                <div class="events-wrapper">
+                    <div class="events">
+                        <ol>
+                            <li><a href="#0" data-date="16/01/2014" class="selected">16 Jan</a></li>
+                            <li><a href="#0" data-date="28/02/2014">28 Feb</a></li>
+                            <li><a href="#0" data-date="20/04/2014">20 Mar</a></li>
+                            <li><a href="#0" data-date="20/05/2014">20 May</a></li>
+                            <li><a href="#0" data-date="09/07/2014">09 Jul</a></li>
+                            <li><a href="#0" data-date="30/08/2014">30 Aug</a></li>
+                            <li><a href="#0" data-date="15/09/2014">15 Sep</a></li>
+                            <li><a href="#0" data-date="01/11/2014">01 Nov</a></li>
+                            <li><a href="#0" data-date="10/12/2014">10 Dec</a></li>
+                            <li><a href="#0" data-date="19/01/2015">29 Jan</a></li>
+                            <li><a href="#0" data-date="03/03/2015">3 Mar</a></li>
+                        </ol>
+        
+                        <span class="filling-line" aria-hidden="true"></span>
+                    </div> 
+                </div>
+                    
+                <ul class="cd-timeline-navigation">
+                    <li><a href="#0" class="prev inactive">Prev</a></li>
+                    <li><a href="#0" class="next">Next</a></li>
+                </ul> 
+            </div>
+        
+            <div class="events-content">
+                <ol>
+                    <li class="selected" data-date="16/01/2014">
+                        <h2>Horizontal Timeline</h2>
+                        <em>January 16th, 2014</em>
+                        <p>	
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                        </p>
+                    </li>
+        
+                    <li data-date="28/02/2014">
+                        <h2>Event title here</h2>
+                        <em>February 28th, 2014</em>
+                        <p>	
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                        </p>
+                    </li>
+        
+                    <li data-date="20/04/2014">
+                        <h2>Event title here</h2>
+                        <em>March 20th, 2014</em>
+                        <p>	
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                        </p>
+                    </li>
+        
+                    <li data-date="20/05/2014">
+                        <h2>Event title here</h2>
+                        <em>May 20th, 2014</em>
+                        <p>	
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                        </p>
+                    </li>
+        
+                    <li data-date="09/07/2014">
+                        <h2>Event title here</h2>
+                        <em>July 9th, 2014</em>
+                        <p>	
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                        </p>
+                    </li>
+        
+                    <li data-date="30/08/2014">
+                        <h2>Event title here</h2>
+                        <em>August 30th, 2014</em>
+                        <p>	
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                        </p>
+                    </li>
+        
+                    <li data-date="15/09/2014">
+                        <h2>Event title here</h2>
+                        <em>September 15th, 2014</em>
+                        <p>	
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                        </p>
+                    </li>
+        
+                    <li data-date="01/11/2014">
+                        <h2>Event title here</h2>
+                        <em>November 1st, 2014</em>
+                        <p>	
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                        </p>
+                    </li>
+        
+                    <li data-date="10/12/2014">
+                        <h2>Event title here</h2>
+                        <em>December 10th, 2014</em>
+                        <p>	
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                        </p>
+                    </li>
+        
+                    <li data-date="19/01/2015">
+                        <h2>Event title here</h2>
+                        <em>January 19th, 2015</em>
+                        <p>	
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                        </p>
+                    </li>
+        
+                    <li data-date="03/03/2015">
+                        <h2>Event title here</h2>
+                        <em>March 3rd, 2015</em>
+                        <p>	
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                        </p>
+                    </li>
+                </ol>
+            </div> -->
+          <!-- <span><i class="fab fa-accusoft"></i></span>
+          <h2>Web Design</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            expedita obcaecati neque iste pariatur. Qui.
+          </p>
+        </div>
+        <div class="service" data-aos="fade-up" data-aos-duration="2000">
+          <span><i class="fas fa-chart-line"></i></span>
+          <h2>Advertising</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            expedita obcaecati neque iste pariatur. Qui.
+          </p>
+        </div>
+        <div class="service" data-aos="fade-left" data-aos-duration="2000">
+          <span><i class="fas fa-blender-phone"></i></span>
+          <h2>App Design</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            expedita obcaecati neque iste pariatur. Qui.
+          </p> -->
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <i class="fa fa-graduation-cap"></i>
+              </div>
+              <div class="timeline-content">
+        
+
+                <h3 class="timeline-content-title">Education</h3>
+                <p class="timeline-content-description">Bachelor's degree in Computer Science, XYZ University</p>
+                <span class="timeline-content-date">2010-2014</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <i class="fa fa-briefcase"></i>
+              </div>
+              <div class="timeline-content">
+                <h3 class="timeline-content-title">Work Experience</h3>
+                <p class="timeline-content-description">Software Engineer at ABC Company</p>
+                <span class="timeline-content-date">2014-2018</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <i class="fa fa-code"></i>
+              </div>
+              <div class="timeline-content">
+                <h3 class="timeline-content-title">Skills</h3>
+                <p class="timeline-content-description">Proficient in Python, JavaScript, and HTML/CSS</p>
+                <span class="timeline-content-date">2015-present</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <i class="fa fa-trophy"></i>
+              </div>
+              <div class="timeline-content">
+                <h3 class="timeline-content-title">Awards & Achievements</h3>
+                <p class="timeline-content-description">Winner of hackathon hosted by DEF Inc.</p>
+                <span class="timeline-content-date">2017</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <i class="fa fa-book"></i>
+              </div>
+              <div class="timeline-content">
+                <h3 class="timeline-content-title">Certifications</h3>
+                <p class="timeline-content-description">Certified Scrum Master</p>
+                <span class="timeline-content-date">2019</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills">
+      <div class="title">
+        <h1>My Skills</h1>
+      </div>
+
+      <!-- <div class="skills-center container"> -->
+        <div
+          class="skills"
+          data-aos="fade-up-left"
+          data-aos-duration="2000"
+        >
+          <!-- <div class="skills-box">
+            <h4>HTML5</h4>
+            <div class="skills-ilt">
+              <div class="skills-bar html"></div>
+              <span></span>
+            </div>
+          </div>
+          <div class="skills-box">
+            <h4>CSS</h4>
+            <div class="skills-ilt">
+              <div class="skills-bar css"></div>
+              <span></span>
+            </div>
+          </div>
+          <div class="skills-box">
+            <h4>JAVASCRIPT</h4>
+            <div class="skills-ilt">
+              <div class="skills-bar javascript"></div>
+              <span></span>
+            </div>
+          </div>
+          <div class="skills-box">
+            <h4>react JS</h4>
+            <div class="skills-ilt">
+              <div class="skills-bar nodejs"></div>
+              <span></span>
+            </div>
+          </div>
+          <div class="skills-box">
+            <h4>Firebase</h4>
+            <div class="skills-ilt">
+              <div class="skills-bar mongodb"></div>
+              <span></span>
+            </div> -->
+            <!-- <div class="card-container">
+                <div class="card">
+                  <img src="logo1.png" alt="logo1">
+                  <h3>Skill 1</h3>
+                </div>
+                <div class="card">
+                  <img src="logo2.png" alt="logo2">
+                  <h3>Skill 2</h3>
+                </div>
+                <div class="card">
+                  <img src="logo3.png" alt="logo3">
+                  <h3>Skill 3</h3>
+                </div>
+                <div class="card">
+                  <img src="logo4.png" alt="logo4">
+                  <h3>Skill 4</h3>
+                </div>
+                <div class="card">
+                  <img src="logo5.png" alt="logo5">
+                  <h3>Skill 5</h3>
+                </div>
+                <div class="card">
+                  <img src="logo6.png" alt="logo6">
+                  <h3>Skill 6</h3>
+                </div>
+              </div> -->
+              <!-- <div class="skill-section">
+                <div class="skill-card">
+                  <img src="html.png" alt="HTML Logo">
+                  <h3>HTML</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+                <div class="skill-card">
+                  <img src="logo-css.png" alt="CSS Logo">
+                  <h3>CSS</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+                <div class="skill-card">
+                  <img src="logo-javascript.png" alt="JavaScript Logo">
+                  <h3>JavaScript</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+                <div class="skill-card">
+                  <img src="logo-react.png" alt="React Logo">
+                  <h3>React</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+                <div class="skill-card">
+                  <img src="logo-nodejs.png" alt="Node.js Logo">
+                  <h3>Node.js</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+                <div class="skill-card">
+                  <img src="logo-mongodb.png" alt="MongoDB Logo">
+                  <h3>MongoDB</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+              </div> -->
+              <div class="ramu">
+                <div class="con">
+                  <div class="card">
+                    <div class="face face1">
+                      <div class="content">
+                        <h1> HTML </h1> 
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur  </p> -->
+                      </div>
+                    </div>
+                    <div class="face face2">
+                      <h2><img src="html.png   " width="175px" alt=""></h2>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="face face1">
+                      <div class="content">
+                        <h2>Lorem Ipsum</h2> 
+                        <!-- <p>Lorem ipsum dolor sit, amet consectetur</p> -->
+                      </div>
+                    </div>
+                    <div class="face face2">
+                      <h2>02</h2>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="face face1">
+                      <div class="content">
+                        <h2>Lorem Ipsum</h2> 
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur </p> -->
+                      </div>
+                    </div>
+                    <div class="face face2">
+                      <h2>03</h2>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="face face1">
+                      <div class="content">
+                        <h2>Lorem Ipsum</h2> 
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur </p> -->
+                      </div>
+                    </div>
+                    <div class="face face2">
+                      <h2>04</h2>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="face face1">
+                      <div class="content">
+                        <h2>Lorem Ipsum</h2> 
+                        <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                      </div>
+                    </div>
+                    <div class="face face2">
+                      <h2>05</h2>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="face face1">
+                      <div class="content">
+                        <h2>Lorem Ipsum</h2> 
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur  </p> -->
+                      </div>
+                    </div>
+                    <div class="face face2">
+                      <h2>06</h2>
+                    </div>
+                  </div>
+                </div>
+              <!-- </div> -->
+          </div>
+        </div>
+
+
+        <!-- <div class="right" data-aos="fade-up-left" data-aos-duration="2000">
+          <h3>My creative skills and experience</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro sit
+            vero voluptatibus sint. Sapiente, nesciunt libero? Delectus ut esse
+            ullam maiores aperiam deleniti excepturi soluta rerum. Ea quas at
+            error officia consequatur magni, unde porro earum? Dignissimos
+            minima, dicta in qui, reprehenderit aperiam esse aliquid,
+            repellendus quia eos repellat iste!
+          </p>
+
+          <a href="#" class="btn">Read more</a>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Teams -->
+    <section class="theme section" id="teams">
+      <div class="title">
+        <h1>My Portfolio</h1>
+      </div>
+
+      <div class="teams-center container">
+        <!-- <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide"> -->
+                <!-- <div class="team">
+                  <div class="img-cover">
+                    <img src="./images/profile1.jpg" alt="" />
+                  </div>
+                  <h3>Project one</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur, excepturi.
+                  </p>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="team">
+                  <div class="img-cover">
+                    <img src="./images/profile2.jpg" alt="" />
+                  </div>
+                  <h3>Project two</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur, excepturi.
+                  </p>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="team">
+                  <div class="img-cover">
+                    <img src="./images/profile2.jpg" alt="" />
+                  </div>
+                  <h3>Project three</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur, excepturi.
+                  </p>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="team">
+                  <div class="img-cover">
+                    <img src="./images/profile3.jpg" alt="" />
+                  </div>
+                  <h3>project four</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur, excepturi.
+                  </p>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="team">
+                  <div class="img-cover">
+                    <img src="./images/profile4.jpg" alt="" />
+                  </div>
+                  <h3>Project five</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur, excepturi.
+                  </p>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="team">
+                  <div class="img-cover">
+                    <img src="./images/profile5.jpg" alt="" />
+                  </div>
+                  <h3>project six</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Pariatur, excepturi.
+                  </p>
+                </div> -->
+                <div class="containering">
+                  <div class="carduip">
+                    <div class="Boxer">
+                      <img src="https://images.pexels.com/photos/594610/pexels-photo-594610.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                    </div>
+                    <div class="details">
+                      <h2>Lorem ipsum dolor</h2>
+                      <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                      <a href="" class="detbtn">view</a>
+                    </div>
+                  </div>
+                  <div class="carduip">
+                    <div class="Boxer">
+                      <img src="https://images.pexels.com/photos/3699319/pexels-photo-3699319.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                    </div>
+                    <div class="details">
+                      <h2>Lorem ipsum dolor</h2>
+                      <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                      <a href="" class="detbtn">view</a>
+                    </div>
+                  </div>
+                  <div class="carduip">
+                    <div class="Boxer">
+                      <img src="https://images.pexels.com/photos/598917/pexels-photo-598917.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                    </div>
+                    <div class="details">
+                      <h2>Lorem ipsum dolor</h2>
+                      <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                      <a href="" class="detbtn">view</a>
+                    </div>
+                  </div>
+                  <div class="carduip">
+                    <div class="Boxer">
+                      <img src="https://images.pexels.com/photos/594610/pexels-photo-594610.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                    </div>
+                    <div class="details">
+                      <h2>Lorem ipsum dolor</h2>
+                      <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                      <a href="" class="detbtn">view</a>
+                    </div>
+                  </div>
+                  <div class="carduip">
+                    <div class="Boxer">
+                      <img src="https://images.pexels.com/photos/594610/pexels-photo-594610.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                    </div>
+                    <div class="details">
+                      <h2>Lorem ipsum dolor</h2>
+                      <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                      <a href="" class="detbtn">view</a>
+                    </div>
+                  </div>
+                  <div class="carduip">
+                    <div class="Boxer">
+                      <img src="img_bgg.png">
+                    </div>
+                    <div class="details">
+                      <h2>Lorem ipsum dolor</h2>
+                      <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                      <a href="https://img-edit-bydorbi.netlify.app/" class="detbtn">view</a>
+                    </div>
+                  </div>
+                </div>
+              <!-- </li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="title">
+        <h1>Contact me</h1>
+      </div>
+
+      <div class="contact-center container">
+        <div class="left" data-aos="fade-down-right" data-aos-duration="2000">
+          <h2>Get in Touch</h2>
+          <p class="ram">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea numquam
+            officia, quibusdam id voluptate cupiditate nam et vero quaerat
+            magnam. quibusdam id voluptate cupiditate nam et vero quaerat
+            magnam.
+          </p>
+          <div>
+            <span class="icon"><i class="fas fa-user"></i></span>
+            <span class="content">
+              <h3>Name</h3>
+              <span>Himanshu Dorbi</span>
+            </span>
+          </div>
+          <div>
+            <span class="icon"><i class="fas fa-envelope"></i></span>
+            <span class="content">
+              <h3>Email</h3>
+              <span>dorbihimanshu306@gmail.com</span>
+            </span>
+          </div>
+
+          <div>
+            <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+            <span class="content">
+              <h3>Address</h3>
+              <span>Dehradun</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="right" data-aos="fade-up-left" data-aos-duration="2000">
+          <form  action="https://formspree.io/f/xyyaedvd"
+          method="POST" class="form" >
+            <h2>Message me</h2>
+            <div>
+              <input type="text"  id ="fullname" placeholder="Name" required autocomplete="off" />
+              <input type="email" name="email"id="emaill_id" placeholder="Email" required  autocomplete="off"/>
+            </div>
+            <!-- <input type="text" placeholder="Subject" /> -->
+            <textarea name="message" id ="message"cols="10" rows="8" placeholder=" message" required minlength="5" autocomplete="off">
+            </textarea>
+            <!-- <a onclick="sendemail(); reset(); return false;"  href="" class="btn"> send message</a> -->
+            <div class="bodyy">
+            <div class="centerno">
+            <button type="submit"id="btn">   <span>SEND</span>
+              <i class="fa fa-paper-plane fa-lg replace"></i>
+              <i class="fa fa-paper-plane plane fa-lg hidden"></i></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Created By <span>Himanshu Dorbi</span> | &copy; 2022 All rights reserved.</p>
+    </footer>
+    <script  type ="text/javascript" src="particles.js"></script>
+  <script  type ="text/javascript" src="app.js"></script>
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <!-- <script type="text/javascript">
+      (function() {
+          // https://dashboard.emailjs.com/admin/account
+          emailjs.init('tHGnYmdzOCwoQWbOO');
+      })();
+  </script> -->
+  <!-- <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('contact-form').addEventListener('submit', function(event) {
+              event.preventDefault();
+              // generate a five digit number for the contact_number variable
+              this.contact_number.value = Math.random() * 100000 | 0;
+              // these IDs from the previous steps
+              emailjs.sendForm('contact_service', 'contact_form', this)
+                  .then(function() {
+                      console.log('SUCCESS!');
+                  }, function(error) {
+                      console.log('FAILED...', error);
+                  });
+          });
+      }
+  </script> -->
+  <script src="index.js"></script>
+  <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendemail(){
+      Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "himdorbi@gmail.com",
+    Password : "A2E1F7716CB2B37B9BF85957B1227F25F574",
+    To : 'himdorbi@gmail.com',
+    From :document.getElementById("emaill_id").value,
+    Subject : "new contact form enquiry",
+    Body : document.getElementById("message").value
+}).then(
+  message => alert(message)
+);
+    }
+  </script> -->
+  <script>
+    var preloader = document.getElementById('preloader');
+    function myfunc(){
+      preloader.style.display='none';
+    }
+
+
+
+
+
+  </script>
+</body>
+</html>
