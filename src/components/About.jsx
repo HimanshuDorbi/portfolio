@@ -4,37 +4,33 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      className="w-full h-screen md:h-auto bg-gradient-to-b from-gray-800 to-black text-white"
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+      <div className="max-w-screen-sm p-4 mx-auto flex flex-col justify-center w-full h-full md:h-auto">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             About
           </p>
         </div>
 
-        <p className="text-xl mt-20">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius,
-          deserunt illum mollitia officiis qui exercitationem perferendis neque
-          quasi a recusandae necessitatibus tempora iusto! Blanditiis error
-          iste, totam fugiat recusandae rerum laborum perferendis molestiae
-          aperiam asperiores nemo. Magni dolor maxime debitis vitae, eaque hic
-          ab mollitia voluptatibus, a nostrum eveniet laborum!
-        </p>
+        <div className="text-xl mt-10 md:mt-10 mb-4" style={{ lineHeight: "2" }}>
+          ⏹️ Proficient in MERN stack development, C++, C, HTML, CSS, JavaScript, Firebase, and data structures and algorithms (DSA) with object-oriented programming (OOPs) concepts.
+        </div>
+        <div className="text-xl mb-4" style={{ lineHeight: "2" }}>
+          ⏹️ Able to build modern and dynamic web applications while maintaining security and scalability.
+        </div>
+        <div className="text-xl mb-4" style={{ lineHeight: "2" }}>
+          ⏹️ Skilled in managing software projects efficiently and collaborating with other developers effectively using Git.
+        </div>
+        <div className="text-xl mb-4" style={{ lineHeight: "2" }}>
+          ⏹️ Familiar with the latest web development technologies and best practices.
+        </div>
 
         <br />
-
-        <p className="text-xl">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-          pariatur, vel similique sint, nobis aspernatur ut praesentium
-          explicabo ipsam aliquid quasi laboriosam et culpa possimus repudiandae
-          quisquam ullam maiores ab unde. Fugiat odio mollitia nemo alias.
-          Commodi facilis atque nulla vero voluptatem explicabo. Quibusdam,
-          magni quo! Eum cupiditate debitis labore.
-        </p>
       </div>
     </div>
   );
 };
 
 export default About;
+ 
