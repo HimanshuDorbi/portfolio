@@ -7,33 +7,37 @@ const NavBar = () => {
 
   const links = [
     {
-      id: 1,
+      id: "home", // Replace this with the correct id value of the home section
       link: "home",
     },
     {
-      id: 2,
+      id: "about", // Replace this with the correct id value of the about section
       link: "about",
     },
     {
-      id: 3,
+      id: "portfolio", // Replace this with the correct id value of the portfolio section
       link: "portfolio",
     },
     {
-      id: 4,
+      id: "experience", // Replace this with the correct id value of the experience section
       link: "experience",
     },
     {
-      id: 5,
+      id: "blogs", // Replace this with the correct id value of the blogs section
       link: "blogs",
     },
     {
-      id: 6,
+      id: "contact", // Replace this with the correct id value of the contact section
       link: "contact",
+    },
+    {
+      id: "timeline", // Replace this with the correct id value of the timeline section
+      link: "timeline",
     },
   ];
 
   return (
-    <div className=" z-10 flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
+    <div className="z-10 flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
       <div>
         <h1 className="text-5xl font-signature ml-2">Himanshu</h1>
       </div>

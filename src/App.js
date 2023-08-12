@@ -9,6 +9,11 @@ import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
 import Blog from "./components/Blog";
+import Preloader from "./components/Preloader";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+ import Timeline  from "./components/Timeline";
 
 
 
@@ -41,13 +46,21 @@ function App() {
 
   return (
     <div>
+      <Preloader/>
       <NavBar />
       <Home />
       <About />
       <Experience />
+      <div className="bg-gray-100 min-h-screen flex justify-center items-center">
+      <Timeline />
+    </div>
+     
+      
       <Portfolio />
       <Blog/>
-     
+
+      <ToastContainer />
+      {/* <LeetCodeStreak/> */}
       <Contact />
 
       <SocialLinks />
@@ -65,3 +78,4 @@ function App() {
 }
 
 export default App;
+
