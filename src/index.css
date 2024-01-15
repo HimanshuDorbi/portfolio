@@ -12,9 +12,39 @@
   }
 }
 
-/* const [ref, inView] = useInView({
-  triggerOnce: true,
-  threshold: 0.2,
-}); */
+/* styles.css */
+.custom-cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
 
+.custom-cursor.active {
+  transform: translate(-50%, -50%) scale(1.2);
+  background-color: #00f; /* Customize the cursor appearance here */
+}
 
+.ripple-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
+  transform: scale(0);
+  animation: ripple-animation 0.5s linear;
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}

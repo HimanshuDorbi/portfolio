@@ -62,7 +62,7 @@ const Blog = () => {
   const initialBlogs = [
     { id: 1, image: blog1, title: "Blog 1", content: "Decoding CMS and Headless CMS: Unveiling the Power Behind Content Management Systems" },
     { id: 2, image: blog2, title: "Blog 2", content: "Oops 404 and more! Website Errors: What They Mean and How to Handle Them" },
-    { id: 3, image: blog3, title: "Blog 3", content: "Content for Blog 3 lorem ipsum i love engineering and technology for better future" },
+    { id: 3, image: blog3, title: "Blog 3", content: "The Rise of Headless CMS: Benefits and Use Cases, How you can be benefited as a developer" },
     { id: 4, image: blog4, title: "Blog 4", content: "Mastering Your React Project: Push to GitHub in Both Main and Master Branch from VS Code!" },
   ];
 

@@ -30,7 +30,10 @@ const PortfolioCard = ({ id, src, demoLink, codeLink, technologies, projectName 
     <motion.div
       ref={ref}
       key={id}
-      className="shadow-md shadow-gray-600 rounded-lg"
+      className="relative rounded-xl overflow-hidden"
+      style={{
+        backgroundImage: "linear-gradient(to bottom right, #4f46e5, #be55df)",
+      }}
       initial="hidden"
       animate="visible"
       variants={variants}
@@ -39,13 +42,12 @@ const PortfolioCard = ({ id, src, demoLink, codeLink, technologies, projectName 
       <img
         src={src}
         alt=""
-        className="rounded-md duration-200 hover:scale-105"
+        className="w-full h-48 object-cover object-center duration-200 hover:scale-105"
       />
-      <div className="flex flex-col items-center justify-center space-y-2 mt-2">
-        {/* Icons representing technologies */}
-        <div className="flex space-x-2">
+      <div className="p-4 text-white bg-opacity-70 backdrop-blur-md">
+        <p className="flex items-center space-x-2">
           {technologies.map((tech) => (
-            <div key={tech} className="text-blue-500 text-lg">
+            <span key={tech} className="text-lg">
               {tech === 'React' && <FaReact />}
               {tech === 'Node.js' && <FaNodeJs />}
               {tech === 'HTML' && <FaHtml5 />}
@@ -53,24 +55,23 @@ const PortfolioCard = ({ id, src, demoLink, codeLink, technologies, projectName 
               {tech === 'Javascript' && <FaJs />}
               {tech === 'database' && <FaDatabase />}
               {/* Add more icons for other technologies */}
-            </div>
+            </span>
           ))}
+        </p>
+        <div className="flex justify-between mt-2">
+          <a href={demoLink} target="_blank" rel="noopener noreferrer">
+            <button className=" border-purple-900 border t-5 px-4 py-2 bg-white text-black rounded-lg transition duration-200 hover:scale-105">
+              Demo
+            </button>
+          </a>
+          <a href={codeLink} target="_blank" rel="noopener noreferrer">
+            <button className="px-4 py-2 bg-black text-white rounded-lg transition duration-200 hover:scale-105">
+              Code
+            </button>
+          </a>
         </div>
-        <div className="flex space-x-6">
-  <a href={demoLink} target="_blank" rel="noopener noreferrer">
-    <button className="px-4 py-2 bg-gray-500 text-white rounded-lg transition duration-200 hover:scale-105">
-      Demo
-    </button>
-  </a>
-  <a href={codeLink} target="_blank" rel="noopener noreferrer">
-    <button className="px-4 py-2 bg-gray-500 text-white rounded-lg transition duration-200 hover:scale-105">
-      Code
-    </button>
-  </a>
-</div>
+        <p className="text-lg font-semibold mt-2">{projectName}</p>
       </div>
-      {/* Project Name */}
-      <p className="text-lg font-semibold text-center mt-2">{projectName}</p>
     </motion.div>
   );
 };
@@ -89,15 +90,15 @@ const Portfolio = () => {
       codeLink: "https://github.com/HimanshuDorbi/ecommerce-app",
       technologies: ['React','HTML', 'CSS', 'Javascript', 'Node.js','database'],
       projectName: 'Fullstack Ecommerce App',
-    
     },
     {
       id: 2,
-      src: arrayDestruct,
-      demoLink: "https://edit-by-dorbi.netlify.app/",
-      codeLink: "https://github.com/HimanshuDorbi/Image-editor",
-      technologies: ['React','HTML', 'CSS', 'Javascript' ],
-      projectName: 'Image Editor App',
+      src: installNode,
+      demoLink: "",
+      codeLink: "https://github.com/HimanshuDorbi?tab=repositories",
+      technologies: ['React','HTML', 'CSS', 'Javascript', 'Node.js','database'],
+      projectName: 'House Rental Application',
+
     },
     {
       id: 3,
@@ -117,11 +118,13 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      src: installNode,
-      demoLink: "https://ninja-games.netlify.app/",
-      codeLink: "https://github.com/HimanshuDorbi?tab=repositories",
-      technologies: ['HTML', 'CSS','Javascript','React'],
-      projectName: 'Ninja Games',
+    
+      src: arrayDestruct,
+      demoLink: "https://edit-by-dorbi.netlify.app/",
+      codeLink: "https://github.com/HimanshuDorbi/Image-editor",
+      technologies: ['React','HTML', 'CSS', 'Javascript' ],
+      projectName: 'Image Editor App',
+     
     },
     {
       id: 6,
@@ -129,7 +132,7 @@ const Portfolio = () => {
       demoLink: "https://getmausam.netlify.app/",
       codeLink: "https://github.com/HimanshuDorbi?tab=repositories",
       technologies: ['HTML', 'CSS','Javascript','React'],
-      projectName: 'Mausam Weather App',
+      projectName: 'SkyWatch App',
     },
   ];
 
@@ -146,7 +149,7 @@ const Portfolio = () => {
           transition={{ duration: 0.8, delay: 0.2}}
         >
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            Portfolio
+            Projects
           </p>
           <p className="py-6">Check out some of my work right here</p>
         </motion.div>

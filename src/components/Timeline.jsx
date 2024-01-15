@@ -10,7 +10,7 @@ const TimelineComponent = () => {
       title: "Schooling Education",
       description: "Embarked on my educational journey at St. Joseph Convent School",
       icon: <FaGraduationCap />,
-      color: "#BD4B4B", // Darker Coral
+      color: "#FF5C58", // Coral
       textColor: "#EEE", // Light gray
     },
     {
@@ -18,7 +18,7 @@ const TimelineComponent = () => {
       title: "Unleashing the Tech Enthusiast",
       description: "Venturing into a Bachelors in Computer Science and Engineering with passion from Graphic Era University",
       icon: <FaLaptopCode />,
-      color: "#CCA63D", // Darker Lemon Yellow
+      color: "#62A4E8", // Sky Blue
       textColor: "#EEE", // Light gray
     },
     {
@@ -26,15 +26,15 @@ const TimelineComponent = () => {
       title: "Coding Odyssey",
       description: "Mastering the art of programming in various languages including C, C++, Java, Javascript, ReactJS, NodeJS, MongoDB",
       icon: <FaCode />,
-      color: "#4B8E5D", // Darker Mint Green
+      color: "#78C672", // Lime Green
       textColor: "#EEE", // Light gray
     },
     {
       date: "2023",
       title: "Conquering the Hackathon Realm",
-      description: "Securing victories in TechGig, Hacktoberfest, and earning recognition from state ministry",
+      description: "Securing victories in Hacktoberfest, and earning recognition from state ministry and University",
       icon: <FaTrophy />,
-      color: "#235A86", // Darker Royal Blue
+      color: "#3D7FA6", // Steel Blue
       textColor: "#EEE", // Light gray
     },
     {
@@ -42,7 +42,7 @@ const TimelineComponent = () => {
       title: "Exploring the Frontier of Research",
       description: "Publishing a research paper on esteemed international journal on comparison based study of Kanade Lucas Tomasi and Eigenfaces",
       icon: <FaSearch />,
-      color: "#865A4A", // Darker Brown
+      color: "#F9AA7D", // Peach
       textColor: "#EEE", // Light gray
     },
     {
@@ -50,7 +50,7 @@ const TimelineComponent = () => {
       title: "Web Development and Technologies",
       description: "Earning a Certificate in MERN STACK Web Development from LinkedIn Learning",
       icon: <FaCertificate />,
-      color: "#6E559F", // Darker Purple
+      color: "#A978C4", // Lavender
       textColor: "#EEE", // Light gray
     },
     // Add more timeline items
@@ -71,9 +71,9 @@ const TimelineComponent = () => {
               key={index}
               date={item.date}
               dateClassName="text-white"
-              iconStyle={{ background: item.color, color: "#EEE" }}
+              iconStyle={{ background: item.color, color: "#EEE", borderRadius: "50%" }}
               icon={item.icon}
-              contentStyle={{ background: item.color, color: item.textColor }}
+              contentStyle={{ background: item.color, color: item.textColor, borderRadius: "10px" }}
               contentArrowStyle={{ borderRight: `7px solid ${item.color}` }}
             >
               <h3 className="vertical-timeline-title font-bold">{item.title}</h3>

@@ -1,0 +1,10 @@
+.abcc {
+    width: 80%; /* Adjust to your desired width */
+    height: 80vh; /* Adjust to your desired height */
+    background-image: url(../assets/splash.png);
+    background-size: cover;
+    background-position: left;
+    -webkit-mask-image: url(../assets/splash.png);
+    -webkit-mask-size: cover;  /* Adjust this to position the image to the left */
+  }
+  

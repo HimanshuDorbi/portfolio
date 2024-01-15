@@ -43,20 +43,19 @@ const Contact = () => {
         </div>
         <motion.div
           ref={mapRef}
-          className="w-full h-96"
+          className="w-full h-96 rounded-md overflow-hidden shadow-lg"
           initial={{ opacity: 0, y: 20 }}
           animate={mapInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1, delay: 0.4 }}
         >
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1722.9435685765245!2d78.00228229999999!3d30.2687968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092bebe00eebaf%3A0xb8c90aa94cdba92f!2sGokul%20dham%20society!5e0!3m2!1sen!2sin!4v1690888844054!5m2!1sen!2sin"
-            width="600"
-            height="450"
+            width="100%"
+            height="100%"
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            className="w-full h-full"
           ></iframe>
         </motion.div>
         <div className="flex justify-center items-center">
@@ -64,13 +63,13 @@ const Contact = () => {
             ref={formRef}
             action="https://getform.io/f/e941ee8b-dbd8-4e64-8c0b-65984c09bf90"
             method="POST"
-            className="flex flex-col w-full bg-gray-700 p-6 rounded-md shadow-md"
+            className="flex flex-col w-full bg-gray-700 p-6 rounded-md shadow-lg"
           >
             <motion.input
               type="text"
               name="name"
               placeholder="Your Name"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none my-2 placeholder-gray-400"
+              className="p-3 bg-transparent border-2 rounded-md text-white focus:outline-none my-2 placeholder-gray-400"
               value={formData.name}
               onChange={handleChange}
               required // Required field validation
@@ -82,7 +81,7 @@ const Contact = () => {
               type="email"
               name="email"
               placeholder="Your Email"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none my-2 placeholder-gray-400"
+              className="p-3 bg-transparent border-2 rounded-md text-white focus:outline-none my-2 placeholder-gray-400"
               value={formData.email}
               onChange={handleChange}
               required // Required field validation
@@ -94,7 +93,7 @@ const Contact = () => {
               name="message"
               placeholder="Your Message"
               rows="5"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none my-2 placeholder-gray-400"
+              className="p-3 bg-transparent border-2 rounded-md text-white focus:outline-none my-2 placeholder-gray-400"
               value={formData.message}
               onChange={handleChange}
               required // Required field validation
@@ -161,8 +160,42 @@ const Contact = () => {
           animate={formInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1, delay: 1.5 }}
         >
-          Made with 💓 by Himanshu Dorbi
+          {/* Made with 💓 by Himanshu Dorbi */}
         </motion.p>
+
+        {/* Footer section */}
+        <footer className="mt-8 text-center text-gray-400 text-xs">
+          <div>
+            Follow me on{" "}
+            <a
+              href="https://www.linkedin.com/in/himanshu-dorbi/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-blue-400 hover:text-blue-600 duration-300"
+            >
+              LinkedIn
+            </a>{" "}
+            |{" "}
+            <a
+              href="https://github.com/HimanshuDorbi"
+              target="_blank"
+              rel="noreferrer"
+              className="text-gray-600 hover:text-gray-800 duration-300"
+            >
+              GitHub
+            </a>{" "}
+            |{" "}
+            <a
+              href="mailto:dorbihimanshu306@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              className="text-red-400 hover:text-red-600 duration-300"
+            >
+              Email
+            </a>
+          </div>
+          <div>&copy; {new Date().getFullYear()} Himanshu Dorbi</div>
+        </footer>
       </div>
 
       <div className="h-16 md:h-24"></div>
